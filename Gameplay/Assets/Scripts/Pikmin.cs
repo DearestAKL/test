@@ -30,6 +30,7 @@ public class Pikmin : MonoBehaviour
     public PikminEvent OnStartCarry;
     public PikminEvent OnEndCarry;
 
+    public Transform sstarget;
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -37,7 +38,8 @@ public class Pikmin : MonoBehaviour
 
     public void SetTarget(Transform target,float updateTime = 1f)
     {
-        if(state == State.Interact)
+        sstarget = target;
+        if (state == State.Interact)
         {
             transform.parent = null;
             agent.enabled = true;

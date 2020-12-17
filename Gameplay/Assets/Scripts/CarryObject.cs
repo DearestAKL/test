@@ -51,8 +51,8 @@ public class CarryObject : InteractiveObject
             (FindObjectOfType(typeof(PikminManager)) as PikminManager).FinishInteraction(this);
 
             //Delete UI
-            if (fractionObject != null)
-                Destroy(fractionObject);
+            //if (fractionObject != null)
+            //    Destroy(fractionObject);
 
             //Capture Animation
             float time = 1.3f;
@@ -81,7 +81,7 @@ public class CarryObject : InteractiveObject
 
     private void Update()
     {
-        if(fractionObject != null)
-            fractionObject.transform.position = Camera.main.WorldToScreenPoint(transform.position + uiOffset);
+        //if(fractionObject != null)
+        //    fractionObject.transform.position = Camera.main.WorldToScreenPoint(transform.position + uiOffset);
     }
 }

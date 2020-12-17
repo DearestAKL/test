@@ -145,7 +145,7 @@ public class PikminManager : MonoBehaviour
             //whistlePlayerParticle.Play();
             DOVirtual.Float(0, (5 / 2) + .5f, .5f, SetWhistleRadius).SetId(2);
 
-            charMovement.transform.GetChild(0).DOScaleY(27f, .05f).SetLoops(-1, LoopType.Yoyo).SetId(3);
+            //charMovement.transform.GetChild(0).DOScaleY(27f, .05f).SetLoops(-1, LoopType.Yoyo).SetId(3);
 
             controller.visualCylinder.localScale = Vector3.zero;
             controller.visualCylinder.DOScaleX(5, .5f);
@@ -156,7 +156,7 @@ public class PikminManager : MonoBehaviour
         {
 
             //whistlePlayerParticle.Stop();
-            charMovement.transform.GetChild(0).DOScaleY(28, .1f);
+            //charMovement.transform.GetChild(0).DOScaleY(28, .1f);
             selectionRadius = 0;
             controller.visualCylinder.DOKill();
             controller.visualCylinder.DOScaleX(0, .2f);
